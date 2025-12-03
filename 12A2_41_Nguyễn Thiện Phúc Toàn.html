@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giáng Sinh Tối Giản</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white; 
+            
+            background-image: url('https://images.unsplash.com/photo-1512389142860-9c449e58a543?q=80&w=1000&auto=format&fit=crop');
+            background-size: cover; 
+            /* Đã bỏ background-attachment: fixed; để hình nền cuộn theo trang */
+            background-position: center center; 
+        }
+
+        header {
+            /* Đỏ Giáng sinh */
+            background-color: rgba(212, 36, 38, 0.9); 
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            /* Xanh lá đậm */
+            border-bottom: 10px solid darkgreen; 
+            position: relative; 
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            /* Nền trắng có độ trong suốt */
+            background: rgba(255, 255, 255, 0.85); 
+            padding: 20px;
+            border-radius: 10px;
+            /* Giữ nguyên rgba cho box-shadow */
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+            color: darkslategray; 
+        }
+        
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { padding: 15px; text-align: left; border-bottom: 1px solid lightgray; }
+        th { background-color: darkgreen; color: white; }
+        /* Hàng xen kẽ có độ trong suốt nhẹ */
+        tr:nth-child(even) { background-color: rgba(240, 240, 240, 0.7); } 
+        
+        td {
+            font-weight: bold;
+        }
+        
+        footer { 
+            text-align: center; 
+            padding: 20px; 
+            /* Nền footer có độ trong suốt */
+            background-color: rgba(51, 51, 51, 0.8);
+            color: white; 
+            margin-top: 40px; 
+        }
+
+        /* Áp dụng cho iFrame / Video */
+        .gif-display {
+             width: 100%;
+             max-width: 600px;
+             height: auto; 
+             margin: 20px auto 0;
+             display: block; 
+             border-radius: 8px;
+             border: 5px solid crimson;
+             /* Đảm bảo tỉ lệ cho iframe */
+             aspect-ratio: 16 / 9; 
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <!-- Đã loại bỏ hoàn toàn thẻ <audio> nền theo yêu cầu. -->
+
+    <header>
+        <h1>🎄 Không Gian Giáng Sinh Ấm Áp 🔥</h1>
+        <p style="font-style: italic;">Giáng Sinh An lành!</p>
+    </header>
+
+    <div class="container">
+        
+        <h2 style="color: darkgreen; text-align: center;">🎶 Bảng Đề Xuất Nhạc Giáng Sinh Tuyệt Vời</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Bài Hát</th>
+                    <th>Nghệ Sĩ</th>
+                    <th>Năm Phát Hành</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="https://youtu.be/aAkMkVFwAoo?si=7UaNV6LWuvNkyrAj">All I Want for Christmas Is You</a></td>
+                    <td>Mariah Carey</td>
+                    <td>1994</td>
+                </tr>
+                <tr>
+                    <td><a href="https://youtu.be/E8gmARGvPlI?si=TfnvQr7rdkm8ZbrS">Last Christmas</a></td>
+                    <td>Wham!</td>
+                    <td>1984</td>
+                </tr>
+                <tr>
+                    <td><a href="https://youtu.be/5vyMuxxLsD0?si=KjGFfFERedt6oM9u">Jingle Bell Rock</a></td>
+                    <td>Bobby Helms</td>
+                    <td>1957</td>
+                </tr>
+                <tr>
+                    <td><a href="https://youtu.be/0bhsXykXxfg?si=G1r1pazKjfqP2jZE">It's Beginning to Look a Lot Like Christmas</a></td>
+                    <td>Michael Bublé</td>
+                    <td>2011</td>
+                </tr>
+                <tr>
+                    <td><a href="https://youtu.be/N8NcQzMQN_U?si=fImDJ6qcGctCVq_w">Feliz Navidad</a></td>
+                    <td>José Feliciano</td>
+                    <td>1970</td>
+                </tr>
+                <tr>
+                    <td><a href="https://youtu.be/nlR0MkrRklg?si=2VMeItpOQrq0lzBD">Santa Tell Me</a></td>
+                    <td>Ariana Grande</td>
+                    <td>2014</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div style="text-align: center; margin-top: 40px;">
+            <h2 style="color: crimson; text-align: center;">🔥 Lò Sưởi Giáng Sinh Ấm Cúng</h2>
+            <!-- Quay lại sử dụng iFrame YouTube vì đường link MP4 bị chặn trong môi trường Canvas/iFrame -->
+            <!-- Thuộc tính referrerpolicy đã được thêm vào -->
+            <iframe 
+                src="https://www.youtube.com/embed/ner_DA0HZts?list=PLvTaXqHhgyZ5u4by-eyE2TElwmD9RaC7K&autoplay=1&mute=1" 
+                title="Christmas Fireplace Ambience" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen
+                class="gif-display" 
+                style="height: auto;">
+            </iframe>
+        </div>
+        
+    </div>
+
+    <footer>
+        <p>Giáng Sinh An Lành! Chúc bạn một mùa lễ hội ấm áp.</p>
+    </footer>
+
+    <!-- Đã loại bỏ khối <script> JavaScript vì iFrame YouTube xử lý việc phát video một cách đáng tin cậy hơn. -->
+</body>
+</html>
